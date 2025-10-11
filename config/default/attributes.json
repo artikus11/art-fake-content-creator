@@ -1,0 +1,32 @@
+{
+  "pa_tip-izdeliya": {
+    "name": "Тип изделия",
+    "terms": ["Куртка", "Брюки", "Платье", "Футболка", "Рубашка", "Юбка", "Обувь"],
+    "has_archives": true,
+    "variation": false
+  },
+  "pa_razmer": {
+    "name": "Размер",
+    "terms": ["XS", "S", "M", "L", "XL", "XXL", "40", "42", "44", "46", "48"],
+    "has_archives": false,
+    "variation": true
+  },
+  "pa_material": {
+    "name": "Материал",
+    "terms": ["Хлопок", "Шерсть", "Лен", "Шелк", "Джинса", "Кожа", "Замша", "Синтетика"],
+    "has_archives": true,
+    "variation": true
+  },
+  "pa_sezon": {
+    "name": "Сезон",
+    "terms": ["Лето", "Зима", "Демисезон", "Весна-осень", "Круглогодичный"],
+    "has_archives": true,
+    "variation": false
+  },
+  "pa_cvet": {
+    "name": "Цвет",
+    "terms": ["Черный", "Белый", "Синий", "Красный", "Зеленый", "Коричневый", "Серый", "Бежевый"],
+    "has_archives": true,
+    "variation": true
+  }
+}

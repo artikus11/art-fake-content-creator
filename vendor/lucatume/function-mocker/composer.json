@@ -1,0 +1,36 @@
+{
+  "name": "lucatume/function-mocker",
+  "description": "Function mocking with Patchwork",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "theAverageDev",
+      "email": "luca@theaveragedev.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.1",
+    "phpunit/phpunit": "7.5 - 9.6",
+    "antecedent/patchwork": "^2.2.0",
+    "lucatume/args": "^1.0.1"
+  },
+  "autoload": {
+    "psr-0": {
+      "tad\\FunctionMocker": "src"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "bin": [
+    "bin/update-tests"
+  ],
+  "scripts": {
+    "pre-update-cmd": "update-tests",
+    "update-tests": "update-tests",
+    "revert-tests": "composer update-tests revert",
+    "phpcs": "phpcs --colors --standard=phpcs.xml",
+    "unit": "phpunit"
+  }
+}

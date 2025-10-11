@@ -1,0 +1,353 @@
+{
+  "product_cat": {
+    "label": "Категории",
+    "terms": {
+      "Тяжёлая промышленность": {
+        "description": "Производство крупногабаритного оборудования, металлов, строительных материалов и других ресурсоёмких товаров.",
+        "slug": "tyazhelaya-promyshlennost",
+        "parent": 0
+      },
+      "Металлургия": {
+        "description": "Отрасль, занимающаяся выплавкой, обработкой и производством чёрных и цветных металлов.",
+        "slug": "metallurgiya",
+        "parent": "tyazhelaya-promyshlennost"
+      },
+      "Чёрная металлургия": {
+        "description": "Производство чугуна, стали и изделий из них, включая прокат, трубы и конструкции.",
+        "slug": "chernaya-metallurgiya",
+        "parent": "metallurgiya"
+      },
+      "Цветная металлургия": {
+        "description": "Добыча, переработка и производство алюминия, меди, цинка, свинца и других цветных металлов.",
+        "slug": "tsvetnaya-metallurgiya",
+        "parent": "metallurgiya"
+      },
+      "Машиностроение": {
+        "description": "Производство промышленного оборудования, станков, двигателей и техники для различных отраслей.",
+        "slug": "mashinostroenie",
+        "parent": "tyazhelaya-promyshlennost"
+      },
+      "Энергетическое машиностроение": {
+        "description": "Создание турбин, котлов, генераторов и другого оборудования для энергетических объектов.",
+        "slug": "energeticheskoe-mashinostroenie",
+        "parent": "mashinostroenie"
+      },
+      "Лёгкая промышленность": {
+        "description": "Производство товаров народного потребления: одежды, обуви, тканей и бытовых изделий.",
+        "slug": "legkaya-promyshlennost",
+        "parent": 0
+      },
+      "Текстильная промышленность": {
+        "description": "Производство пряжи, тканей, нетканых материалов и трикотажа из натуральных и синтетических волокон.",
+        "slug": "tekstilnaya-promyshlennost",
+        "parent": "legkaya-promyshlennost"
+      },
+      "Швейное производство": {
+        "description": "Пошив одежды, спецодежды, домашнего текстиля и аксессуаров из готовых тканей.",
+        "slug": "shveynoe-proizvodstvo",
+        "parent": "tekstilnaya-promyshlennost"
+      },
+      "Химическая промышленность": {
+        "description": "Производство химических веществ, полимеров, удобрений, красок и бытовой химии.",
+        "slug": "khimicheskaya-promyshlennost",
+        "parent": 0
+      },
+      "Нефтехимия": {
+        "description": "Переработка нефти и газа в пластмассы, синтетические каучуки, растворители и другие органические соединения.",
+        "slug": "neftekhimiya",
+        "parent": "khimicheskaya-promyshlennost"
+      },
+      "Фармацевтика": {
+        "description": "Производство лекарственных средств, витаминов, вакцин и медицинских препаратов.",
+        "slug": "farmatsevtika",
+        "parent": "khimicheskaya-promyshlennost"
+      },
+      "Пищевая промышленность": {
+        "description": "Переработка сельскохозяйственного сырья в продукты питания и напитки.",
+        "slug": "pishchevaya-promyshlennost",
+        "parent": 0
+      },
+      "Мясная промышленность": {
+        "description": "Производство колбас, полуфабрикатов, консервов и других продуктов из мяса и птицы.",
+        "slug": "myasnaya-promyshlennost",
+        "parent": "pishchevaya-promyshlennost"
+      },
+      "Молочная промышленность": {
+        "description": "Производство молока, сыров, йогуртов, масла и других молочных продуктов.",
+        "slug": "molochnaya-promyshlennost",
+        "parent": "pishchevaya-promyshlennost"
+      },
+      "Деревообработка": {
+        "description": "Переработка древесины в пиломатериалы, фанеру, ДСП и другие древесные материалы.",
+        "slug": "derevoobrabotka",
+        "parent": 0
+      },
+      "Мебельное производство": {
+        "description": "Изготовление корпусной, мягкой и офисной мебели из дерева, МДФ и других материалов.",
+        "slug": "mebelnoe-proizvodstvo",
+        "parent": "derevoobrabotka"
+      },
+      "Энергетика": {
+        "description": "Генерация, передача и распределение электрической и тепловой энергии.",
+        "slug": "energetika",
+        "parent": 0
+      },
+      "Тепловая энергетика": {
+        "description": "Производство энергии на ТЭС, котельных и других объектах с использованием сжигания топлива.",
+        "slug": "teplovaya-energetika",
+        "parent": "energetika"
+      },
+      "Возобновляемая энергетика": {
+        "description": "Генерация энергии из возобновляемых источников: солнца, ветра, воды и биомассы.",
+        "slug": "vozobnovlyamaya-energetika",
+        "parent": "energetika"
+      }
+    }
+  },
+  "product_brand": {
+    "label": "Бренды",
+    "terms": {
+      "PromMash": {
+        "description": "Лидер в производстве промышленных станков и автоматизированных линий для тяжёлой промышленности.",
+        "slug": "prommash",
+        "parent": 0
+      },
+      "PromMash Energy": {
+        "description": "Специализированное подразделение PromMash для энергетического машиностроения.",
+        "slug": "prommash-energy",
+        "parent": "prommash"
+      },
+      "MetalCore": {
+        "description": "Высокотехнологичное предприятие по производству чёрных и цветных металлов с низким углеродным следом.",
+        "slug": "metalcore",
+        "parent": 0
+      },
+      "MetalCore Black": {
+        "description": "Линейка продуктов для чёрной металлургии под брендом MetalCore.",
+        "slug": "metalcore-black",
+        "parent": "metalcore"
+      },
+      "MetalCore Color": {
+        "description": "Линейка решений для цветной металлургии от MetalCore.",
+        "slug": "metalcore-color",
+        "parent": "metalcore"
+      },
+      "EcoSteel": {
+        "description": "Инновационный бренд экологичной стали, ориентированный на устойчивое производство и переработку.",
+        "slug": "ecosteel",
+        "parent": 0
+      },
+      "AgroTechPro": {
+        "description": "Промышленное оборудование для пищевой переработки — от молочных линий до мясных цехов.",
+        "slug": "agrotechpro",
+        "parent": 0
+      },
+      "AgroTechPro Dairy": {
+        "description": "Специализированное оборудование для молочной промышленности.",
+        "slug": "agrotechpro-dairy",
+        "parent": "agrotechpro"
+      },
+      "PowerGrid Systems": {
+        "description": "Решения для тепловой и возобновляемой энергетики: турбины, инверторы, системы управления.",
+        "slug": "powergrid-systems",
+        "parent": 0
+      },
+      "PowerGrid Renewables": {
+        "description": "Подбренд PowerGrid Systems, посвящённый солнечной и ветровой энергетике.",
+        "slug": "powergrid-renewables",
+        "parent": "powergrid-systems"
+      }
+    }
+  },
+  "product_tag": {
+    "label": "Теги",
+    "terms": {
+      "Новинка": {
+        "description": "Товар недавно поступил в продажу.",
+        "slug": "novinka",
+        "parent": 0
+      },
+      "Хит продаж": {
+        "description": "Один из самых популярных товаров в каталоге.",
+        "slug": "khit-prodazh",
+        "parent": 0
+      },
+      "Распродажа": {
+        "description": "Товар участвует в акции со сниженной ценой.",
+        "slug": "rasprodazha",
+        "parent": 0
+      },
+      "В наличии": {
+        "description": "Товар есть на складе и готов к отгрузке.",
+        "slug": "v-nalichii",
+        "parent": 0
+      },
+      "Бесплатная доставка": {
+        "description": "Доставка по указанному региону осуществляется без дополнительной оплаты.",
+        "slug": "besplatnaya-dostavka",
+        "parent": 0
+      }
+    }
+  },
+  "category": {
+    "label": "Категории записей",
+    "terms": {
+      "Промышленная аналитика": {
+        "description": "Обзоры рынков, тренды и прогнозы в промышленных отраслях",
+        "slug": "promyshlennaya-analitika",
+        "parent": 0
+      },
+      "Мировые тренды": {
+        "description": "Глобальные индустриальные тенденции и инновации",
+        "slug": "mirovye-trendy",
+        "parent": "promyshlennaya-analitika"
+      },
+      "Региональные рынки": {
+        "description": "Анализ промышленного развития по регионам и странам",
+        "slug": "regionalnye-rynki",
+        "parent": "promyshlennaya-analitika"
+      },
+      "Технологии производства": {
+        "description": "Современные методы и оборудование в промышленности",
+        "slug": "tekhnologii-proizvodstva",
+        "parent": 0
+      },
+      "Цифровизация": {
+        "description": "Индустрия 4.0, IoT, цифровые двойники и автоматизация",
+        "slug": "tsifrovizatsiya",
+        "parent": "tekhnologii-proizvodstva"
+      },
+      "Роботизация": {
+        "description": "Промышленные роботы и автоматизированные линии",
+        "slug": "robotizatsiya",
+        "parent": "tekhnologii-proizvodstva"
+      },
+      "Энергетика и ресурсы": {
+        "description": "Энергоснабжение, топливо и ресурсная эффективность",
+        "slug": "energetika-i-resursy",
+        "parent": 0
+      },
+      "Зелёная энергетика": {
+        "description": "Возобновляемые источники энергии в промышленности",
+        "slug": "zelenaya-energetika",
+        "parent": "energetika-i-resursy"
+      },
+      "Энергоэффективность": {
+        "description": "Снижение энергопотребления и оптимизация затрат",
+        "slug": "energoeffektivnost",
+        "parent": "energetika-i-resursy"
+      },
+      "Металлургия и материалы": {
+        "description": "Производство и применение промышленных материалов",
+        "slug": "metallurgiya-i-materialy",
+        "parent": 0
+      },
+      "Чёрная металлургия": {
+        "description": "Сталь, чугун и технологии их производства",
+        "slug": "chernaya-metallurgiya",
+        "parent": "metallurgiya-i-materialy"
+      },
+      "Цветная металлургия": {
+        "description": "Алюминий, медь, титан и редкоземельные металлы",
+        "slug": "tsvetnaya-metallurgiya",
+        "parent": "metallurgiya-i-materialy"
+      },
+      "Химическая промышленность": {
+        "description": "Химия в промышленности: от базовых веществ до высоких технологий",
+        "slug": "khimicheskaya-promyshlennost",
+        "parent": 0
+      },
+      "Нефтехимия": {
+        "description": "Переработка нефти и газа в промышленные продукты",
+        "slug": "neftekhimiya",
+        "parent": "khimicheskaya-promyshlennost"
+      },
+      "Промышленная безопасность": {
+        "description": "Охрана труда, экология и безопасность на производстве",
+        "slug": "promyshlennaya-bezopasnost",
+        "parent": 0
+      },
+      "Охрана труда": {
+        "description": "Нормативы, СИЗ и практики безопасной работы",
+        "slug": "okhrana-truda",
+        "parent": "promyshlennaya-bezopasnost"
+      },
+      "Экологические стандарты": {
+        "description": "Снижение выбросов, утилизация отходов и ESG-инициативы",
+        "slug": "ekologicheskie-standarty",
+        "parent": "promyshlennaya-bezopasnost"
+      },
+      "Машиностроение": {
+        "description": "Разработка и производство промышленного оборудования",
+        "slug": "mashinostroenie",
+        "parent": 0
+      },
+      "Тяжёлое машиностроение": {
+        "description": "Крупногабаритная техника для горнодобычи, энергетики и транспорта",
+        "slug": "tyazheloe-mashinostroenie",
+        "parent": "mashinostroenie"
+      },
+      "Точное машиностроение": {
+        "description": "Высокоточные компоненты для авиации, медицины и электроники",
+        "slug": "tochnoe-mashinostroenie",
+        "parent": "mashinostroenie"
+      }
+    }
+  },
+  "post_tag": {
+    "label": "Тематические метки",
+    "terms": {
+      "Индустрия 4.0": {
+        "description": "Цифровая трансформация, IoT, умные фабрики и автоматизация",
+        "slug": "industriya-4-0",
+        "parent": 0
+      },
+      "ESG": {
+        "description": "Экологические, социальные и управленческие практики в промышленности",
+        "slug": "esg",
+        "parent": 0
+      },
+      "Импортозамещение": {
+        "description": "Развитие отечественных технологий и производств в ответ на санкции",
+        "slug": "importozameshchenie",
+        "parent": 0
+      },
+      "Инновации": {
+        "description": "Новые технологии, патенты и прорывные решения в промышленности",
+        "slug": "innovatsii",
+        "parent": 0
+      },
+      "Кейсы": {
+        "description": "Реальные примеры внедрения решений на предприятиях",
+        "slug": "keysy",
+        "parent": 0
+      },
+      "Регулирование": {
+        "description": "Законы, стандарты и госполитика в промышленной сфере",
+        "slug": "regulirovanie",
+        "parent": 0
+      },
+      "Кадры": {
+        "description": "Подготовка специалистов, кадровый дефицит и корпоративная культура",
+        "slug": "kadry",
+        "parent": 0
+      },
+      "Экспорт": {
+        "description": "Выход промышленных компаний на международные рынки",
+        "slug": "eksport",
+        "parent": 0
+      },
+      "Цепочки поставок": {
+        "description": "Логистика, сырьё, компоненты и устойчивость поставок",
+        "slug": "tsepochki-postavok",
+        "parent": 0
+      },
+      "Устойчивое развитие": {
+        "description": "Экологичное производство,и долгосрочная эффективность",
+        "slug": "ustoichivoe-razvitie",
+        "parent": 0
+      }
+    }
+  }
+}
+

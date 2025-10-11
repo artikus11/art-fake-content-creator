@@ -1,0 +1,398 @@
+{
+  "product_cat": {
+    "label": "Категории",
+    "terms": {
+      "Одежда и обувь": {
+        "description": "Широкий ассортимент одежды, обуви и аксессуаров для всех возрастов и стилей жизни",
+        "slug": "odezhda-i-obuv",
+        "parent": 0
+      },
+      "Мужская одежда": {
+        "description": "Стильная и качественная мужская одежда для делового и повседневного гардероба",
+        "slug": "muzhskaya-odezhda",
+        "parent": "odezhda-i-obuv"
+      },
+      "Верхняя одежда": {
+        "description": "Куртки, пальто и пуховики для защиты от непогоды в любом сезоне",
+        "slug": "verkhnyaya-odezhda",
+        "parent": "muzhskaya-odezhda"
+      },
+      "Мужские костюмы": {
+        "description": "Классические и современные костюмы для деловых встреч и особых мероприятий",
+        "slug": "muzhskie-kostyumy",
+        "parent": "muzhskaya-odezhda"
+      },
+      "Женская одежда": {
+        "description": "Элегантная и модная женская одежда для создания неповторимого образа",
+        "slug": "zhenskaya-odezhda",
+        "parent": "odezhda-i-obuv"
+      },
+      "Платья и юбки": {
+        "description": "Широкий выбор платьев и юбок для офиса, вечеринок и повседневной носки",
+        "slug": "platya-yubki",
+        "parent": "zhenskaya-odezhda"
+      },
+      "Женские блузы и рубашки": {
+        "description": "Стильные блузы и рубашки из качественных материалов для завершения образа",
+        "slug": "zhenskie-bluzy-rubashki",
+        "parent": "zhenskaya-odezhda"
+      },
+      "Обувь": {
+        "description": "Комфортная и стильная обувь для любого времени года и различных мероприятий",
+        "slug": "obuv",
+        "parent": "odezhda-i-obuv"
+      },
+      "Мужская обувь": {
+        "description": "Классическая и повседневная обувь для мужчин из натуральных материалов",
+        "slug": "muzhskaya-obuv",
+        "parent": "obuv"
+      },
+      "Женская обувь": {
+        "description": "Элегантная и модная женская обувь на любой вкус и для любого случая",
+        "slug": "zhenskaya-obuv",
+        "parent": "obuv"
+      },
+      "Детская одежда": {
+        "description": "Яркая и удобная одежда для детей из гипоаллергенных материалов",
+        "slug": "detskaya-odezhda",
+        "parent": "odezhda-i-obuv"
+      },
+      "Одежда для мальчиков": {
+        "description": "Прочная и стильная одежда для активных мальчиков всех возрастов",
+        "slug": "odezhda-dlya-malchikov",
+        "parent": "detskaya-odezhda"
+      },
+      "Одежда для девочек": {
+        "description": "Красивая и удобная одежда для маленьких модниц на каждый день",
+        "slug": "odezhda-dlya-devochek",
+        "parent": "detskaya-odezhda"
+      },
+      "Спортивная одежда": {
+        "description": "Функциональная спортивная одежда для тренировок и активного отдыха",
+        "slug": "sportivnaya-odezhda",
+        "parent": "odezhda-i-obuv"
+      },
+      "Фитнес-одежда": {
+        "description": "Специальная одежда для фитнеса и занятий спортом с улучшенной вентиляцией",
+        "slug": "fitnes-odezhda",
+        "parent": "sportivnaya-odezhda"
+      },
+      "Туристическая одежда": {
+        "description": "Специализированная одежда для туризма и активного отдыха на природе",
+        "slug": "turisticheskaya-odezhda",
+        "parent": "sportivnaya-odezhda"
+      },
+      "Аксессуары": {
+        "description": "Модные аксессуары для завершения образа и практического использования",
+        "slug": "aksessuary",
+        "parent": "odezhda-i-obuv"
+      },
+      "Сумки и рюкзаки": {
+        "description": "Стильные и функциональные сумки и рюкзаки для работы и путешествий",
+        "slug": "sumki-ryukzaki",
+        "parent": "aksessuary"
+      },
+      "Головные уборы": {
+        "description": "Шляпы, кепки и другие головные уборы для защиты от солнца и завершения образа",
+        "slug": "golovnye-ubory",
+        "parent": "aksessuary"
+      }
+    }
+  },
+  "product_brand": {
+    "label": "Бренды",
+    "terms": {
+      "Adidas": {
+        "description": "Немецкий производитель спортивной одежды, обуви и аксессуаров",
+        "slug": "adidas",
+        "parent": 0
+      },
+      "Nike": {
+        "description": "Американский бренд спортивной одежды и обуви для профессиональных атлетов",
+        "slug": "nike",
+        "parent": 0
+      },
+      "Zara": {
+        "description": "Испанский бренд модной одежды в стиле fast fashion для всей семьи",
+        "slug": "zara",
+        "parent": 0
+      },
+      "H&M": {
+        "description": "Шведский ритейлер модной и качественной одежды по доступным ценам",
+        "slug": "h-m",
+        "parent": 0
+      },
+      "Gucci": {
+        "description": "Итальянский люксовый бренд одежды, обуви и аксессуаров",
+        "slug": "gucci",
+        "parent": 0
+      },
+      "Puma": {
+        "description": "Немецкий производитель спортивной одежды и обуви для активного образа жизни",
+        "slug": "puma",
+        "parent": 0
+      },
+      "Louis Vuitton": {
+        "description": "Французский дом моды, специализирующийся на люксовой одежде и аксессуарах",
+        "slug": "louis-vuitton",
+        "parent": 0
+      },
+      "Columbia": {
+        "description": "Американский бренд функциональной одежды и обуви для активного отдыха",
+        "slug": "columbia",
+        "parent": 0
+      },
+      "Timberland": {
+        "description": "Производитель прочной обуви и одежды для экстремальных условий",
+        "slug": "timberland",
+        "parent": 0
+      },
+      "Reebok": {
+        "description": "Британский бренд спортивной одежды и обуви для фитнеса и тренировок",
+        "slug": "reebok",
+        "parent": 0
+      },
+      "The North Face": {
+        "description": "Производитель высокотехнологичной одежды и снаряжения для outdoor активностей",
+        "slug": "the-north-face",
+        "parent": 0
+      },
+      "Boss": {
+        "description": "Немецкий бренд премиальной деловой и повседневной одежды",
+        "slug": "boss",
+        "parent": 0
+      },
+      "Massimo Dutti": {
+        "description": "Испанский бренд качественной базовой одежды премиум-класса",
+        "slug": "massimo-dutti",
+        "parent": 0
+      },
+      "Geox": {
+        "description": "Итальянский производитель дышащей обуви и одежды с инновационными технологиями",
+        "slug": "geox",
+        "parent": 0
+      },
+      "Ecco": {
+        "description": "Датский бренд комфортной обуви из высококачественной кожи",
+        "slug": "ecco",
+        "parent": 0
+      },
+      "Clarks": {
+        "description": "Британский производитель удобной повседневной и классической обуви",
+        "slug": "clarks",
+        "parent": 0
+      },
+      "Skechers": {
+        "description": "Американский бренд спортивной и повседневной обуви с акцентом на комфорт",
+        "slug": "skechers",
+        "parent": 0
+      },
+      "Lacoste": {
+        "description": "Французский бренд одежды и обуви с узнаваемым крокодиловым логотипом",
+        "slug": "lacoste",
+        "parent": 0
+      },
+      "Tommy Hilfiger": {
+        "description": "Американский бренд одежды в стиле классической американской моды",
+        "slug": "tommy-hilfiger",
+        "parent": 0
+      },
+      "Calvin Klein": {
+        "description": "Американский бренд одежды, нижнего белья и аксессуаров в минималистичном стиле",
+        "slug": "calvin-klein",
+        "parent": 0
+      }
+    }
+  },
+  "product_tag": {
+    "label": "Теги",
+    "terms": {
+      "Новинка": {
+        "description": "Товар недавно поступил в продажу.",
+        "slug": "novinka",
+        "parent": 0
+      },
+      "Хит продаж": {
+        "description": "Один из самых популярных товаров в каталоге.",
+        "slug": "khit-prodazh",
+        "parent": 0
+      },
+      "Распродажа": {
+        "description": "Товар участвует в акции со сниженной ценой.",
+        "slug": "rasprodazha",
+        "parent": 0
+      },
+      "В наличии": {
+        "description": "Товар есть на складе и готов к отгрузке.",
+        "slug": "v-nalichii",
+        "parent": 0
+      },
+      "Бесплатная доставка": {
+        "description": "Доставка по указанному региону осуществляется без дополнительной оплаты.",
+        "slug": "besplatnaya-dostavka",
+        "parent": 0
+      }
+    }
+  },
+  "category": {
+    "label": "Категории записей",
+    "terms": {
+      "Промышленная аналитика": {
+        "description": "Обзоры рынков, тренды и прогнозы в промышленных отраслях",
+        "slug": "promyshlennaya-analitika",
+        "parent": 0
+      },
+      "Мировые тренды": {
+        "description": "Глобальные индустриальные тенденции и инновации",
+        "slug": "mirovye-trendy",
+        "parent": "promyshlennaya-analitika"
+      },
+      "Региональные рынки": {
+        "description": "Анализ промышленного развития по регионам и странам",
+        "slug": "regionalnye-rynki",
+        "parent": "promyshlennaya-analitika"
+      },
+      "Технологии производства": {
+        "description": "Современные методы и оборудование в промышленности",
+        "slug": "tekhnologii-proizvodstva",
+        "parent": 0
+      },
+      "Цифровизация": {
+        "description": "Индустрия 4.0, IoT, цифровые двойники и автоматизация",
+        "slug": "tsifrovizatsiya",
+        "parent": "tekhnologii-proizvodstva"
+      },
+      "Роботизация": {
+        "description": "Промышленные роботы и автоматизированные линии",
+        "slug": "robotizatsiya",
+        "parent": "tekhnologii-proizvodstva"
+      },
+      "Энергетика и ресурсы": {
+        "description": "Энергоснабжение, топливо и ресурсная эффективность",
+        "slug": "energetika-i-resursy",
+        "parent": 0
+      },
+      "Зелёная энергетика": {
+        "description": "Возобновляемые источники энергии в промышленности",
+        "slug": "zelenaya-energetika",
+        "parent": "energetika-i-resursy"
+      },
+      "Энергоэффективность": {
+        "description": "Снижение энергопотребления и оптимизация затрат",
+        "slug": "energoeffektivnost",
+        "parent": "energetika-i-resursy"
+      },
+      "Металлургия и материалы": {
+        "description": "Производство и применение промышленных материалов",
+        "slug": "metallurgiya-i-materialy",
+        "parent": 0
+      },
+      "Чёрная металлургия": {
+        "description": "Сталь, чугун и технологии их производства",
+        "slug": "chernaya-metallurgiya",
+        "parent": "metallurgiya-i-materialy"
+      },
+      "Цветная металлургия": {
+        "description": "Алюминий, медь, титан и редкоземельные металлы",
+        "slug": "tsvetnaya-metallurgiya",
+        "parent": "metallurgiya-i-materialy"
+      },
+      "Химическая промышленность": {
+        "description": "Химия в промышленности: от базовых веществ до высоких технологий",
+        "slug": "khimicheskaya-promyshlennost",
+        "parent": 0
+      },
+      "Нефтехимия": {
+        "description": "Переработка нефти и газа в промышленные продукты",
+        "slug": "neftekhimiya",
+        "parent": "khimicheskaya-promyshlennost"
+      },
+      "Промышленная безопасность": {
+        "description": "Охрана труда, экология и безопасность на производстве",
+        "slug": "promyshlennaya-bezopasnost",
+        "parent": 0
+      },
+      "Охрана труда": {
+        "description": "Нормативы, СИЗ и практики безопасной работы",
+        "slug": "okhrana-truda",
+        "parent": "promyshlennaya-bezopasnost"
+      },
+      "Экологические стандарты": {
+        "description": "Снижение выбросов, утилизация отходов и ESG-инициативы",
+        "slug": "ekologicheskie-standarty",
+        "parent": "promyshlennaya-bezopasnost"
+      },
+      "Машиностроение": {
+        "description": "Разработка и производство промышленного оборудования",
+        "slug": "mashinostroenie",
+        "parent": 0
+      },
+      "Тяжёлое машиностроение": {
+        "description": "Крупногабаритная техника для горнодобычи, энергетики и транспорта",
+        "slug": "tyazheloe-mashinostroenie",
+        "parent": "mashinostroenie"
+      },
+      "Точное машиностроение": {
+        "description": "Высокоточные компоненты для авиации, медицины и электроники",
+        "slug": "tochnoe-mashinostroenie",
+        "parent": "mashinostroenie"
+      }
+    }
+  },
+  "post_tag": {
+    "label": "Тематические метки",
+    "terms": {
+      "Индустрия 4.0": {
+        "description": "Цифровая трансформация, IoT, умные фабрики и автоматизация",
+        "slug": "industriya-4-0",
+        "parent": 0
+      },
+      "ESG": {
+        "description": "Экологические, социальные и управленческие практики в промышленности",
+        "slug": "esg",
+        "parent": 0
+      },
+      "Импортозамещение": {
+        "description": "Развитие отечественных технологий и производств в ответ на санкции",
+        "slug": "importozameshchenie",
+        "parent": 0
+      },
+      "Инновации": {
+        "description": "Новые технологии, патенты и прорывные решения в промышленности",
+        "slug": "innovatsii",
+        "parent": 0
+      },
+      "Кейсы": {
+        "description": "Реальные примеры внедрения решений на предприятиях",
+        "slug": "keysy",
+        "parent": 0
+      },
+      "Регулирование": {
+        "description": "Законы, стандарты и госполитика в промышленной сфере",
+        "slug": "regulirovanie",
+        "parent": 0
+      },
+      "Кадры": {
+        "description": "Подготовка специалистов, кадровый дефицит и корпоративная культура",
+        "slug": "kadry",
+        "parent": 0
+      },
+      "Экспорт": {
+        "description": "Выход промышленных компаний на международные рынки",
+        "slug": "eksport",
+        "parent": 0
+      },
+      "Цепочки поставок": {
+        "description": "Логистика, сырьё, компоненты и устойчивость поставок",
+        "slug": "tsepochki-postavok",
+        "parent": 0
+      },
+      "Устойчивое развитие": {
+        "description": "Экологичное производство,и долгосрочная эффективность",
+        "slug": "ustoichivoe-razvitie",
+        "parent": 0
+      }
+    }
+  }
+}
+

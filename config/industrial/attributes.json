@@ -1,0 +1,92 @@
+{
+  "pa_tip-oborudovaniya": {
+    "name": "Тип оборудования",
+    "terms": ["Насос", "Компрессор", "Редуктор", "Электродвигатель", "Конвейер"],
+    "has_archives": true,
+    "variation": false
+  },
+  "pa_moshhnost": {
+    "name": "Мощность",
+    "terms": ["1.5 кВт", "5.5 кВт", "11 кВт", "30 кВт", "75 кВт"],
+    "has_archives": false,
+    "variation": true
+  },
+  "pa_napryazhenie": {
+    "name": "Напряжение питания",
+    "terms": ["220В", "380В", "24В", "400В", "660В"],
+    "has_archives": true,
+    "variation": true
+  },
+  "pa_chastota-vrashcheniya": {
+    "name": "Частота вращения",
+    "terms": ["1500 об/мин", "3000 об/мин", "1000 об/мин", "750 об/мин"],
+    "has_archives": false,
+    "variation": true
+  },
+  "pa_stepen-zashchity": {
+    "name": "Степень защиты (IP)",
+    "terms": ["IP54", "IP55", "IP65", "IP67", "IP20"],
+    "has_archives": true,
+    "variation": false
+  },
+  "pa_tip-dvigatelya": {
+    "name": "Тип двигателя",
+    "terms": ["Асинхронный", "Синхронный", "Постоянного тока", "Шаговый"],
+    "has_archives": true,
+    "variation": true
+  },
+  "pa_diametr-podklyucheniya": {
+    "name": "Диаметр подключения",
+    "terms": ["DN25", "DN50", "DN80", "DN100", "DN150"],
+    "has_archives": false,
+    "variation": true
+  },
+  "pa_rabochee-davlenie": {
+    "name": "Рабочее давление",
+    "terms": ["10 бар", "16 бар", "25 бар", "40 бар", "63 бар"],
+    "has_archives": false,
+    "variation": false
+  },
+  "pa_material-korpysa": {
+    "name": "Материал корпуса",
+    "terms": ["Чугун", "Сталь", "Латунь", "Нержавеющая сталь", "Пластик"],
+    "has_archives": true,
+    "variation": true
+  },
+  "pa_tip-tormoza": {
+    "name": "Тип тормоза",
+    "terms": ["Электромагнитный", "Гидравлический", "Механический", "Пневматический"],
+    "has_archives": true,
+    "variation": false
+  },
+  "pa_temperatura-sredy": {
+    "name": "Температура окружающей среды",
+    "terms": ["-20°C до +40°C", "-40°C до +50°C", "0°C до +60°C"],
+    "has_archives": false,
+    "variation": false
+  },
+  "pa_sposob-upravleniya": {
+    "name": "Способ управления",
+    "terms": ["Ручной", "Автоматический", "Через ПЛК", "Дистанционный"],
+    "has_archives": true,
+    "variation": false
+  },
+  "pa_proizvoditelnost": {
+    "name": "Производительность",
+    "terms": ["10 м³/ч", "50 м³/ч", "100 м³/ч", "200 м³/ч", "500 м³/ч"],
+    "has_archives": false,
+    "variation": true
+  },
+  "pa_tip-pere-dachi": {
+    "name": "Тип передачи",
+    "terms": ["Ременная", "Цепная", "Фрикционная", "Зубчатая"],
+    "has_archives": true,
+    "variation": false
+  },
+  "pa_massa": {
+    "name": "Масса",
+    "terms": ["15 кг", "50 кг", "120 кг", "300 кг", "500 кг"],
+    "has_archives": false,
+    "variation": false
+  }
+}
