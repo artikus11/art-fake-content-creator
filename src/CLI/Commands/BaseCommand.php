@@ -300,11 +300,11 @@ abstract class BaseCommand extends WP_CLI_Command {
 	/**
 	 * @param  array<string,string|bool> $assoc_args    Arguments array.
 	 * @param  string                    $flag          Flag to get the value.
-	 * @param  mixed                     $default_value Default value for the flag. Default: NULL.
+	 * @param  mixed|null                $default_value Default value for the flag. Default: NULL.
 	 *
 	 * @return mixed
 	 */
-	protected function get_flag_value( array $assoc_args, string $flag, $default_value = null ) {
+	protected function get_flag_value( array $assoc_args, string $flag, mixed $default_value = null ): mixed {
 
 		return get_flag_value( $assoc_args, $flag, $default_value );
 	}

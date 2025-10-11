@@ -135,7 +135,7 @@ class TaxonomyManager extends BaseManager {
 	}
 
 
-	public function delete() {
+	public function delete(): void {
 
 		foreach ( $this->get_configured_taxonomies() as $taxonomy ) {
 

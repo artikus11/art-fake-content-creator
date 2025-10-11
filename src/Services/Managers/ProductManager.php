@@ -42,7 +42,7 @@ class ProductManager extends BaseManager {
 	}
 
 
-	public function prepare_create_operations() {
+	public function prepare_create_operations(): void {
 
 		foreach ( $this->get_configured_product_type() as $product_type ) {
 			$this->add_create_step( $product_type, $this->count );
@@ -50,7 +50,7 @@ class ProductManager extends BaseManager {
 	}
 
 
-	public function delete() {
+	public function delete(): void {
 
 		foreach ( $this->entities as $product_id ) {
 			wp_delete_post( $product_id, true );
@@ -63,7 +63,7 @@ class ProductManager extends BaseManager {
 	}
 
 
-	public function prepare_delete_operations() {
+	public function prepare_delete_operations(): void {
 
 		if ( ! $this->has_exists() ) {
 			$this->add_delete_step( 'products', 0 );

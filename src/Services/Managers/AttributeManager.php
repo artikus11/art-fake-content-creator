@@ -131,7 +131,7 @@ class AttributeManager extends BaseManager {
 	}
 
 
-	public function delete() {
+	public function delete(): void {
 
 		foreach ( $this->entities as $attr ) {
 			$taxonomy = 'pa_' . $attr->attribute_name;

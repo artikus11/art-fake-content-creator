@@ -79,11 +79,15 @@ config/
 
 ### Создать изображения
 
-`wp fcc image create --profile=cosmetics`
+```
+wp fcc image create --profile=cosmetics
+```
 
 ### Создать атрибуты
 
-`wp fcc attribute create --profile=industrial`
+```
+wp fcc attribute create --profile=industrial
+```
 
 ### Создать таксономии
 
@@ -142,7 +146,7 @@ wp fcc image create --profile=cosmetics
 wp fcc product create --count=10 --type=variable,simple --seed --profile=cosmetics
 ```
 
-> Все фейковые объекты помечаются метой `_is_fake_content`.
+> Все фейковые объекты помечаются метой `_created_for_fake_content`.
 
 ## Разработка
 
@@ -241,7 +245,7 @@ class MyTypeManager extends BaseManager {
 }
 ```
 
-> В рамках одной команды методы подсчета количества запускаются раньше, чем обробка самой команды. См. `src/CLI/Commands/BaseCommand.php`
+> В рамках одной команды методы подсчета количества запускаются раньше, чем обрабка самой команды. См. `src/CLI/Commands/BaseCommand.php`
 
 ## Лицензия
 

@@ -36,7 +36,7 @@ class ProductCommand extends BaseCommand {
 	protected array $short_descriptions;
 
 
-	protected string $profile;
+	protected ?string $profile;
 
 
 	protected array $taxonomies;
