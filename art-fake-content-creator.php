@@ -4,7 +4,7 @@
  * Text Domain: art-fake-content-creator
  * Domain Path: /languages
  * Description: Плагин для генерации контента
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Artem Abramovich, Campusboy
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 const FCC_PLUGIN_DIR   = __DIR__;
 const FCC_PLUGIN_AFILE = __FILE__;
 
-const FCC_PLUGIN_VER    = '1.0.0';
+const FCC_PLUGIN_VER    = '1.0.1';
 const FCC_PLUGIN_NAME   = 'Fake Content Creator';
 const FCC_PLUGIN_SLUG   = 'art-fake-content-creator';
 const FCC_PLUGIN_PREFIX = 'fcc';
