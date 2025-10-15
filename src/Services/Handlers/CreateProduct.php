@@ -22,10 +22,14 @@ class CreateProduct {
 	public int $product_id;
 
 
+	protected ?string $attr_to_use;
+
+
 	public function __construct( $config, $type ) {
 
-		$this->config = $config;
-		$this->type   = $type;
+		$this->config      = $config;
+		$this->type        = $type;
+		$this->attr_to_use = $this->config['attr_to_use'];
 	}
 
 
@@ -85,9 +89,24 @@ class CreateProduct {
 			$product = $this->product;
 		}
 
-		$attributes = ( new AttachmentAttributes( $this->config['attributes'] ) )->generate_attributes();
+		$attributes = ( new AttachmentAttributes( $this->config['attributes'] ) )->generate_attributes( $this->get_count_attributes_to_use() );
 
 		$product->set_attributes( $attributes );
+	}
+
+
+	protected function get_count_attributes_to_use(): string {
+
+		$count_attr_to_use = array_map( 'trim', explode( ',', $this->attr_to_use ) );
+
+		$min_attributes_to_use = $count_attr_to_use[0];
+		$max_attributes_to_use = '-1' === $count_attr_to_use[1] ? null : $count_attr_to_use[1];
+
+		if ( $this->product->is_type( ProductType::VARIABLE ) ) {
+			$max_attributes_to_use = 5;
+		}
+
+		return implode( ',', [ $min_attributes_to_use, $max_attributes_to_use ] );
 	}
 
 

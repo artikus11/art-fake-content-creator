@@ -29,7 +29,7 @@ class ProductManager extends BaseManager {
 	public function create(): void {
 
 		foreach ( $this->get_configured_product_type() as $product_type ) {
-			for ( $i = 0; $i < $this->count; $i ++ ) {
+			for ( $i = 0; $i < $this->count; $i++ ) {
 
 				( new CreateProduct( $this->config, $product_type ) )->run();
 

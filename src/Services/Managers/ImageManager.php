@@ -103,7 +103,7 @@ class ImageManager extends BaseManager {
 	}
 
 
-	public function delete(): void  {
+	public function delete(): void {
 
 		foreach ( $this->entities as $image_id ) {
 			wp_delete_attachment( $image_id, true );
@@ -116,7 +116,7 @@ class ImageManager extends BaseManager {
 	}
 
 
-	public function prepare_delete_operations(): void  {
+	public function prepare_delete_operations(): void {
 
 		if ( ! $this->has_exists() ) {
 			$this->add_delete_step( 'images', 0 );

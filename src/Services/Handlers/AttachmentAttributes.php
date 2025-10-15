@@ -19,12 +19,14 @@ class AttachmentAttributes {
 	}
 
 
-	public function generate_attributes(): array {
+	public function generate_attributes( $count_attr_to_use = '1,5' ): array {
+
+		[ $min_attributes_to_use, $max_attributes_to_use ] = $this->get_count_attributes_to_use( $count_attr_to_use );
 
 		$this->clear_attribute_cache();
 
 		$product_attributes = [];
-		$attributes_to_use  = RandomUtils::get_random_array( $this->config, 0, 5 );
+		$attributes_to_use  = RandomUtils::get_random_array( $this->config, $min_attributes_to_use, $max_attributes_to_use );
 
 		if ( $attributes_to_use > 0 ) {
 			foreach ( $attributes_to_use as $attribute_slug => $attribute_data ) {
@@ -108,7 +110,7 @@ class AttachmentAttributes {
 			if ( is_wp_error( $new_term ) ) {
 				if ( $new_term->get_error_code() === 'term_exists' ) {
 					$term_id                        = $new_term->get_error_data();
-					$term_ids[]                    = $term_id;
+					$term_ids[]                     = $term_id;
 					$term_order_mapping[ $term_id ] = $order;
 				}
 				continue;
@@ -164,5 +166,21 @@ class AttachmentAttributes {
 
 		delete_transient( 'wc_attribute_taxonomies' );
 		wp_cache_flush();
+	}
+
+
+	/**
+	 * @param  string $count_attr_to_use переданный флаг количества атрибутов.
+	 *
+	 * @return array
+	 */
+	protected function get_count_attributes_to_use( string $count_attr_to_use ): array {
+
+		$count_attr_to_use = array_map( 'trim', explode( ',', $count_attr_to_use ) );
+
+		$min_attributes_to_use = $count_attr_to_use[0];
+		$max_attributes_to_use = empty( $count_attr_to_use[1] ) ? null : $count_attr_to_use[1];
+
+		return [ $min_attributes_to_use, $max_attributes_to_use ];
 	}
 }

@@ -12,9 +12,6 @@ use WP_CLI;
 
 class ProductCommand extends BaseCommand {
 
-	protected array $assoc_args;
-
-
 	protected array $attributes;
 
 
@@ -40,6 +37,9 @@ class ProductCommand extends BaseCommand {
 
 
 	protected array $taxonomies;
+
+
+	protected ?string $attr_to_use;
 
 
 	private function get_services(): array {
@@ -80,19 +80,25 @@ class ProductCommand extends BaseCommand {
 	 * [--seed]
 	 * : Создавать связанные данные при создании товаров.
 	 *
+	 * [--attr-to-use]
+	 * : Количество атрибутов для использования. Минимальное и максимальное значение: 1,5
+	 * При указании значения максимального значения -1 , будут использованы все атрибуты из профиля
+	 * При использовании типа variable используется занчение 1,5
+	 *
 	 * ## EXAMPLES
 	 *      wp fcc product create
 	 *      wp fcc product create --seed
 	 *      wp fcc product create --type=variable
 	 *      wp fcc product create --count=10 --type=variable --profile=industrial --seed
 	 *      wp fcc product create --count=10 --type=simple,variable --profile=industrial --seed
+	 *      wp fcc product create --count=10 --type=simple --profile=industrial --seed --attr-to-use=0,-1
 	 *
 	 * @throws \WP_CLI\ExitException выбрасываем исключение при ошибке.
 	 */
 	public function create( $args, $assoc_args ) {
 
-		$this->assoc_args = $assoc_args;
-		$this->profile    = $this->get_flag_value( $assoc_args, 'profile' );
+		$this->profile     = $this->get_flag_value( $assoc_args, 'profile' );
+		$this->attr_to_use = $this->get_flag_value( $assoc_args, 'attr-to-use', '1,5' );
 
 		$this->set_loader_data();
 
@@ -112,6 +118,7 @@ class ProductCommand extends BaseCommand {
 			'descriptions'       => $this->descriptions,
 			'short_descriptions' => $this->short_descriptions,
 			'attributes'         => $this->attributes,
+			'attr_to_use'        => $this->attr_to_use,
 			'images'             => $this->images,
 			'brands'             => $this->taxonomies['product_brand'],
 			'categories'         => $this->taxonomies['product_cat'],
