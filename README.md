@@ -26,6 +26,10 @@
     ```markdown
    wp plugin install https://github.com/artikus11/art-fake-content-creator/releases/latest/download/art-fake-content-creator.zip --activate
    ```
+4. Обновление с релиза через WP CLI
+    ```markdown
+   wp plugin install https://github.com/artikus11/art-fake-content-creator/releases/latest/download/art-fake-content-creator.zip --force
+   ```
 
 ## Профили
 
